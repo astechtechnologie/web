@@ -1,112 +1,101 @@
-/* Agrega estilos para la posición de la navegación */
-.nav-right {
-    float: right;
-}
-
-/* Resto de estilos */
+/* Estilos generales */
 body {
+    width:100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #f0f0f0;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.cuerpomenu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.imagen-caja {
-    flex: 1;
-}
-
-.lista1 {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.lista1 li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.lista1 li:last-child {
-    margin-right: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: rgb(207, 106, 11);
+    background-color: #f4f4f4;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    margin: auto;
+    overflow: hidden;
 }
 
-.contenido {
-    background-color: #fff;
-    padding: 5px;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
-}
-#quien-soy{
-    background-color: #BBE5E1
-    ;
-}
-
-footer {
-    background-color: #333;
+/* Estilos del encabezado */
+.cuerpomenu {
+    background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding-top: 20px;
+}
+
+.nav-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-container ul li.logo-li {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.nav-container ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos de la sección "¿Quién soy?" */
+.contenido1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagen-quien-soy {
+    flex: 1;
     text-align: center;
+    margin-right: 20px;
+}
+
+.imagen-quien-soy img {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto-quien-soy {
+    flex: 2;
+}
+
+/* Estilos de los productos de psicoterapia */
+.contenido-psicoterapia {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.producto {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.color-precio {
+    color: #007bff; /* Cambia este color según tu preferencia */
+}
+
+/* Estilos del pie de página */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.imagen {
-    max-width: 300px;
-    height: auto;
-    align-items: center;
-    margin: 3%;
-}
- 
-.image-container {
-    max-width: 1100px; /* Ancho máximo de la caja */
-    margin: 45px auto; /* Centra la caja horizontalmente */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el ancho máximo */
-    text-align: center; /* Centra la imagen dentro de la caja */
-}
-
-.image-container img {
-    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
-    display: block; /* Evita que la imagen tenga espacio extra debajo */
 }
